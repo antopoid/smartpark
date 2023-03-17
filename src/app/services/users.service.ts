@@ -7,7 +7,7 @@ import { Users } from 'src/app/models/users.model';
 })
 export class UsersService {
 
-  apiUrl = 'http://api_container:8080/users';
+  apiUrl = 'http://antopoid.com:8080/users';
 
   httpOptions = {
     headers :new HttpHeaders({
