@@ -6,7 +6,7 @@ import { Slots } from '../models/slots.model';
 })
 export class SlotsService {
 
-  apiUrl = 'http://antopoid.com:8080'
+  apiUrl = 'http://antopoid.com:8887'
 
   httpOptions = {
     headers :new HttpHeaders({

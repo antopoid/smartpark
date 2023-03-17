@@ -13,7 +13,7 @@ export class LocationsService {
     })    
   }
   
-  apiUrl = 'http://antopoid.com:8080/locations';
+  apiUrl = 'http://antopoid.com:8887/locations';
 
   constructor(private _http: HttpClient) { }
 

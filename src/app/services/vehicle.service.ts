@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class VehicleService {
 
-  apiUrl = 'http://antopoid.com:8080/vehicle';
+  apiUrl = 'http://antopoid.com:8887/vehicle';
 
   httpOptions = {
     headers :new HttpHeaders({

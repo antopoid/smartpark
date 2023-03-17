@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class AdminService {
 
-  apiUrl = 'http://antopoid.com:8080/admin';
+  apiUrl = 'http://antopoid.com:8887/admin';
 
   httpOptions = {
     headers :new HttpHeaders({
