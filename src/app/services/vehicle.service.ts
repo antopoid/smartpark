@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class VehicleService {
 
-  apiUrl = 'http://localhost:8080/vehicle';
+  apiUrl = 'http://api_container:8080/vehicle';
 
   httpOptions = {
     headers :new HttpHeaders({

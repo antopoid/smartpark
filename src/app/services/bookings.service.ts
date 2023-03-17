@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class BookingsService {
 
-  apiUrl = 'http://localhost:8080'
+  apiUrl = 'http://api_container:8080'
   
   httpOptions = {
     headers :new HttpHeaders({

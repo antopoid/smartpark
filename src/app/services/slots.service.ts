@@ -6,7 +6,7 @@ import { Slots } from '../models/slots.model';
 })
 export class SlotsService {
 
-  apiUrl = 'http://localhost:8080'
+  apiUrl = 'http://api_container:8080'
 
   httpOptions = {
     headers :new HttpHeaders({

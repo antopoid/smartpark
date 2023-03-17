@@ -13,7 +13,7 @@ export class LocationsService {
     })    
   }
   
-  apiUrl = 'http://localhost:8080/locations';
+  apiUrl = 'http://api_container:8080/locations';
 
   constructor(private _http: HttpClient) { }
 

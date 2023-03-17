@@ -7,7 +7,7 @@ import { Users } from 'src/app/models/users.model';
 })
 export class UsersService {
 
-  apiUrl = 'http://localhost:8080/users';
+  apiUrl = 'http://api_container:8080/users';
 
   httpOptions = {
     headers :new HttpHeaders({
