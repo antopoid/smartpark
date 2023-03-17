@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "http://smartpark.antopoid.com")
+@CrossOrigin(origins = "*")
 public class VehicleController {
 	@Autowired
 	private VehicleService service;

@@ -23,7 +23,7 @@ import com.remotehiring.Mail.MailService;
 import freemarker.template.TemplateException;
 
 @RestController
-@CrossOrigin(origins = "http://smartpark.antopoid.com")
+@CrossOrigin(origins = "*")
 public class UsersController {
 	
 	@Autowired

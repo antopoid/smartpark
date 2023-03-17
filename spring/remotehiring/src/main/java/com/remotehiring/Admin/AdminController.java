@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "http://smartpark.antopoid.com")
+@CrossOrigin(origins = "*")
 public class AdminController {
 	@Autowired
 	private AdminService service;
