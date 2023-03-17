@@ -2,7 +2,7 @@
     <div class="col-md-11 card" >
         <div class="row " style="background-color: #ff4f5a;color: white;margin: 10px;padding: 10px;">
             <div class="col-md-12 d-flex justify-content-center" >
-                <h2>Book Slot</h2>
+                <h2>Place De Parking</h2>
             </div>
         </div>
         <div *ngIf="load" class="d-flex justify-content-center">
@@ -22,8 +22,8 @@
                             <!-- select vehicle    -->
                             <div class="col-md-12 m-2">
                                 <div class="form-group">
-                                    <label for="vehicle_type">Select Vehicle Type</label>
-                                    <select class="form-control"  [(ngModel)]="bookingdetails.vehicle_type" name="vehicle_type" id="vehicle_type">
+                                    <label for="vehicle_type">Sélectionner le type de véhicule</label>
+                                    <select class="form-control"  [(ngModel)]="bookingdetails.vehicle_type" name="Type de vehicule" id="vehicle_type">
                                             <option *ngFor='let vehicle of vehicles$' value="{{vehicle.vehicle_type}}">{{vehicle.vehicle_type}}</option>                                  
                                     </select>
                                 </div>
@@ -32,9 +32,9 @@
 
                             <!-- vehicle number enter -->
                             <div class="col-md-12 m-2">
-                                    <input class="input" type="text" [(ngModel)]="bookingdetails.vehicle_no" name="vehicle_no" placeholder="Vehicle Number" autocomplete="off" required>
+                                    <input class="input" type="text" [(ngModel)]="bookingdetails.vehicle_no" name="Plaque d'immatriculation" placeholder="Vehicle Number" autocomplete="off" required>
 
-                                    <small>FORMAT: TN-01-AA-1111</small>
+                                    <small>FORMAT: AA-123-BB</small>
                             </div>
                             <!-- end vehicle number -->
 
@@ -42,9 +42,9 @@
                             <div class="col-md-12 mt-2 mb-3">
                                 <div class="row m-2">
                                     <div>
-                                        Select Time: <input type="time" id="time" [(ngModel)]="bookingdetails.time" name="time">
+                                        Sélectionner l'heure: <input type="time" id="time" [(ngModel)]="bookingdetails.time" name="heure">
                                         <br>
-                                        <small>NOTE: Book 2 hours earlier</small>
+                                        <small>NOTE: Réserver 2 heures avant ...</small>
                                     </div>            
                                 </div>
                             </div>
@@ -53,20 +53,20 @@
                             <!-- enter hours    -->
                             <div class="col-md-12 mb-3 ml-2">
 
-                                <input class="input mt-0" name="duration" id="duration" type="number" min="1" max="24" [(ngModel)]="bookingdetails.duration" id="duration" placeholder="Estimated Hours" autocomplete="off"  required>
+                                <input class="input mt-0" name="Durée" id="duration" type="number" min="1" max="24" [(ngModel)]="bookingdetails.duration" id="duration" placeholder="Heure Estimée" autocomplete="off"  required>
                             </div>
                             <!-- end hours    -->
 
                             <!-- select slot    -->
                             <div class="col-md-12">
-                                <h4 class="m-2">Select Slot</h4>
+                                <h4 class="m-2">Selectionner la place de parking</h4>
                                 <div class="row border ">
                                     <div class="col-2 m-1 pt-3 pb-0"  *ngFor="let slot of slots$" >   
                                         <div  *ngIf="slot.status != 0;" >
                                             
                                             <input type="radio" disabled [(ngModel)]="bookingdetails.slotid" id="{{slot.slotno}}" name="slotid" value="{{slot.slotid }}">
                                             <label  id="slot" for="{{slot.slotno}}">{{slot.slotno}}</label> 
-                                            <small class="text-danger">Already Booked!</small>
+                                            <small class="text-danger">Deja Réservée!</small>
                                           
                                         </div>    
                                         <div *ngIf="slot.status == 0;">
@@ -88,7 +88,7 @@
                                             <input type="reset" class="button" value="Reset">
                                         </div>
                                         <div class="col">
-                                            <button class="button"  (click)='addBooking()'>Book Slot</button>
+                                            <button class="button"  (click)='addBooking()'>Réserver la place</button>
                                         </div>
                                     </div>                                    
                                 </div>

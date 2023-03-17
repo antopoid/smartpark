@@ -9,7 +9,7 @@
     margin-top: 10px;
     color: white;
     height: 35px;
-    background-color: #ff4f5a;
+    background-color: #4f5bff;
     font-weight: 900;
     border-radius: 5px;
 }
@@ -28,7 +28,7 @@
 .input:focus{
     border: none;
     outline: none;
-    border-bottom: 1px solid #ff4f5a;   
+    border-bottom: 1px solid #4f5bff;   
 }
 
 .button-slot{
@@ -37,7 +37,7 @@
     margin-top: 10px;
     color: white;
     height: 35px;
-    background-color: #ff4f5a;
+    background-color: #4f5bff;
     font-weight: 900;
     border-radius: 5px;
 }

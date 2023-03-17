@@ -1,5 +1,5 @@
 .wrapper{
-    background-color: #ff4f5a;
+    background-color: #4f5bff;
     clip-path: polygon(0 16%, 100% 0, 100% 84%, 0% 100%);
 }
 
@@ -16,7 +16,7 @@
     width: 150px;
     color: white;
     height: 35px;
-    background-color: #ff4f5a;
+    background-color: #4f5bff;
     font-weight: 900;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.589);
@@ -35,5 +35,5 @@
 .input:focus{
     border: none;
     outline: none;
-    border-bottom: 1px solid #ff4f5a;   
+    border-bottom: 1px solid #4f5bff;   
 }

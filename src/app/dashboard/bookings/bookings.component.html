@@ -2,7 +2,7 @@
     <div class="col-md-11 card " >
         <div class="row " style="background-color: #ff4f5a;color: white;margin: 10px;padding: 10px;">
             <div class="col-md-12 d-flex justify-content-center" >
-                <h2>My Bookings</h2>
+                <h2>Mes Réservations</h2>
             </div>
         </div>
         <hr>
@@ -16,7 +16,7 @@
                                     <div class="card-header" id="headingTwo">
                                         <div class="row">
                                             <div class="col-md-3">
-                                                <h3><b>Location :</b> {{booking.locationid}}</h3>
+                                                <h3><b>Localisation :</b> {{booking.locationid}}</h3>
                                             </div>
                                             <div class="col-md-7">
                                                 <h3><b>Date :</b> {{booking.date}}</h3>
@@ -27,18 +27,18 @@
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-auto mr-auto">
-                                                  <b>Slot No :</b> {{booking.slotid}} <br> 
-                                                  <b>Vehicle Type :</b> {{booking.vehicle_type}} <br> 
-                                                  <b>Duration :</b> {{booking.duration}} hours <br> 
+                                                  <b>Numéro De Place :</b> {{booking.slotid}} <br> 
+                                                  <b>Type De Vehicule :</b> {{booking.vehicle_type}} <br> 
+                                                  <b>Durée :</b> {{booking.duration}} hours <br> 
                                                   <div *ngIf="booking.paid != 0">
-                                                    <b>Cost :</b> {{booking.cost}} rupees
+                                                    <b>Coût :</b> {{booking.cost}} euros
                                                   </div>
                                                 </div>
                                                 <div class="col-auto" *ngIf='booking.paid == 0'>
-                                                  <button class="button" (click) = 'endBooking(booking.bookingid)'> End Book</button>
+                                                  <button class="button" (click) = 'endBooking(booking.bookingid)'> Fin De Réservation</button>
                                                 </div>
                                                 <div class="col-auto" *ngIf='booking.paid != 0'>
-                                                    <p class="text-success font-weight-bold">Booking Completed</p>
+                                                    <p class="text-success font-weight-bold">Réservation Complétée</p>
                                                   </div>
                                             </div>  
                                         </div>
@@ -47,9 +47,9 @@
                             </div>  
                             <div *ngIf='show'>
                                 <h2>
-                                    No Bookings Found...
+                                    Aucune Réservation ...
                                 </h2>
-                                <button class="button" routerLink='/dashboard' > Book Now</button>
+                                <button class="button" routerLink='/dashboard' > Réserver Maintenant</button>
                             </div>
                         </div>
                     </div>

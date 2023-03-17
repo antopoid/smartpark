@@ -19,7 +19,7 @@ h2{
 
 .getquotebtn{
     border: none;
-    background-color: #ff4f5a;
+    background-color: #4f5bff;
     height: 50px;
     padding: 15px;
     margin-right: 20px;
@@ -30,7 +30,7 @@ h2{
 
 .options-primary{
     height: 20vh;
-    background-color: #ff4f5a;
+    background-color: #4f5bff;
     font-size: 20px;
     color: white;
     font-weight: bold;
