@@ -6,7 +6,7 @@ import { Slots } from '../models/slots.model';
 })
 export class SlotsService {
 
-  apiUrl = 'http://smartparkapi.antopoid.com'
+  apiUrl = 'https://smartparkapi.antopoid.com'
 
   httpOptions = {
     headers :new HttpHeaders({

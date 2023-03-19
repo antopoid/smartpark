@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class BookingsService {
 
-  apiUrl = 'http://smartparkapi.antopoid.com'
+  apiUrl = 'https://smartparkapi.antopoid.com'
   
   httpOptions = {
     headers :new HttpHeaders({
