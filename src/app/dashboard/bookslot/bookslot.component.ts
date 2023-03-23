@@ -73,7 +73,7 @@ export class BookslotComponent implements OnInit {
 
   checkTime(bookingTime){
 
-  var currentTime = new Date();
+  /*var currentTime = new Date();
   
   var ISTTime = new Date(currentTime.getTime() + (330 + currentTime.getTimezoneOffset())*60000)
   ISTTime.setHours(ISTTime.getHours()+2)
@@ -83,7 +83,7 @@ export class BookslotComponent implements OnInit {
   var m = parseInt(time[1])
   if (h<ISTTime.getHours() || (h == ISTTime.getHours() && m < ISTTime.getMinutes())){
       return false
-  }
+  }*/
     return true;
   }
 }
