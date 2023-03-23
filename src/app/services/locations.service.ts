@@ -13,7 +13,7 @@ export class LocationsService {
     })    
   }
   
-  apiUrl = 'http://antopoid.com:8887/locations';
+  apiUrl = 'http://smartparkapi.antopoid.com/locations';
 
   constructor(private _http: HttpClient) { }
 

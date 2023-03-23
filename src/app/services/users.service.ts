@@ -7,7 +7,7 @@ import { Users } from 'src/app/models/users.model';
 })
 export class UsersService {
 
-  apiUrl = 'http://antopoid.com:8887/users';
+  apiUrl = 'http://smartparkapi.antopoid.com/users';
 
   httpOptions = {
     headers :new HttpHeaders({

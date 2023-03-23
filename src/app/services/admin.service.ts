@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class AdminService {
 
-  apiUrl = 'http://antopoid.com:8887/admin';
+  apiUrl = 'http://smartparkapi.antopoid.com/admin';
 
   httpOptions = {
     headers :new HttpHeaders({
